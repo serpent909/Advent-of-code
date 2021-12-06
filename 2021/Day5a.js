@@ -33,7 +33,7 @@ for (let i = 0; i < filteredCoordList.length; i++) {
     let test = filteredCoordList[i].split(",");
 
     if ((test[0]) === (test[2])) {
-
+        
         let diff = Math.abs(test[1] - test[3]);
         let min = Math.min(test[1], test[3]);
         markZeroArrayX(diff, min, test[0]);
@@ -45,6 +45,8 @@ for (let i = 0; i < filteredCoordList.length; i++) {
             let min = Math.min(test[0], test[2]);
             markZeroArrayY(diff, min, test[1]);
         }
+    } else {
+
     }
 }
 
@@ -61,8 +63,8 @@ function markZeroArrayY(diff, min, column) {
 }
 
 for (let i = 0; i < zeroArray.length; i++) {
-    for (let j = 0; j < zeroArray.length; j++) {
-        if (zeroArray[i][j] > 1) {
+    for(let j = 0; j < zeroArray.length; j++) {
+        if(zeroArray[i][j] > 1) {
             count++
         }
 
