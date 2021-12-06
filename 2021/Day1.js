@@ -1,6 +1,6 @@
 let fs = require("fs");
 let text = fs.readFileSync("./2021/Day1a.txt").toString('utf-8');
-let textByLine = text.split("\n");
+let textByLine = text.split("\n")
 let increased = 0;
 let decreased = 0;
 let lowerLine = 0;
